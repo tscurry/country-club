@@ -1,0 +1,58 @@
+/******************* Universal Styles ******************/
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/****************** First Section / Welcome Section ********************/
+
+.bg-image {
+    background-image: url('../images/background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: max-content;
+    height: 150px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 25px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.welcome {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 25%;
+    margin: auto;
+    width: max-content;
+}
+
+.welcome h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.welcome p {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 25px 0;
+}
