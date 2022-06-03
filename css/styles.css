@@ -32,7 +32,7 @@
     margin: 0 25px;
 }
 
-a:hover {
+.nav-links a:hover {
     text-decoration: underline;
     text-underline-offset: 20px;
 }
@@ -53,6 +53,20 @@ a:hover {
     font-size: 16px;
     font-weight: 700;
     padding: 20px 0;
+}
+
+.welcome button {
+    cursor: pointer;
+    margin-top: 20px;
+    background: transparent;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+
+.welcome button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 
@@ -144,4 +158,116 @@ a:hover {
 .tennis-text p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+
+/********************* Membership Section *********************/
+
+.membership {
+    background-image: url('../media/join.jpg');
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
+
+.membership a {
+    position: relative;
+    top: 45%;
+    text-underline-offset: 15px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.membership a:hover {
+    opacity: 0.8;
+}
+
+
+/*********************** Footer *********************/
+
+footer {
+    background-color: #f7f7f7;
+    padding-top: 50px;
+}
+
+.footer-sections {
+    display: flex;
+    width: 75%;
+    /* border: 5px solid red; */
+}
+
+footer h2,
+footer h3 {
+    font-weight: 500;
+}
+
+.col-1 {
+    width: 30%;
+    margin-left: 0;
+}
+
+.col-1 p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 25px 0;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-2 p,
+strong {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.col-2 p:nth-of-type(1),
+.col-2 p:nth-of-type(4) {
+    padding: 20px 0;
+}
+
+.col-2 h3 {
+    padding-top: 20px;
+}
+
+.col-3 {
+    width: 20%;
+    margin-right: 0;
+}
+
+.col-3 h2 {
+    padding-bottom: 20px;
+}
+
+footer hr {
+    width: 75%;
+    opacity: 0.25;
+    margin: 20px auto;
+}
+
+#copyright {
+    padding-bottom: 15px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.gen-info a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.gen-info li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.gen-info a:hover {
+    opacity: 0.7;
 }
