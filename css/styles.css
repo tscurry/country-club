@@ -16,6 +16,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100vw;
 }
 
 .nav-links {
@@ -197,7 +198,6 @@ footer {
 .footer-sections {
     display: flex;
     width: 75%;
-    /* border: 5px solid red; */
 }
 
 footer h2,
@@ -270,4 +270,72 @@ footer hr {
 
 .gen-info a:hover {
     opacity: 0.7;
+}
+
+
+/***************** Media Queries *************************/
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    /************** Welcome Section *******************/
+    .nav-links a {
+        font-size: .80rem;
+    }
+    .welcome h2 {
+        font-size: 2.5rem;
+    }
+    .bg-image {
+        background-position: center;
+    }
+    /*****************  About Section ************/
+    .about button {
+        font-size: .7rem;
+        width: 23%;
+    }
+    .about video {
+        width: 55%;
+        padding-left: 50px;
+    }
+    .about h2 {
+        font-size: 1.5rem;
+    }
+    .paragraphs p {
+        font-size: .6rem;
+    }
+    /****************** Duplicate Section Value Changes ****************/
+    .golf,
+    .football,
+    .swimming,
+    .tennis {
+        width: 85%;
+    }
+    .golf img,
+    .football img,
+    .swimming img,
+    .tennis img {
+        width: 60%;
+    }
+    .golf-text p,
+    .football-text p,
+    .swimming-text p,
+    .tennis-text p {
+        font-size: .75rem;
+    }
+    .golf-text h2,
+    .football-text h2,
+    .swimming-text h2,
+    .tennis-text h2 {
+        font-size: 1.5rem;
+    }
+    /***************  Footer Section ***************/
+    .col-1 p,
+    .col-2 p,
+    .gen-info a {
+        font-size: .65rem;
+    }
+    .footer-sections h2 {
+        font-size: .85rem;
+    }
+    .col-2 {
+        width: 25%;
+    }
 }
