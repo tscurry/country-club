@@ -16,7 +16,8 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
+    background-position: center;
+    width: auto;
 }
 
 .nav-links {
@@ -275,7 +276,7 @@ footer hr {
 
 /***************** Media Queries *************************/
 
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
     /************** Welcome Section *******************/
     .nav-links a {
         font-size: .80rem;
@@ -283,23 +284,20 @@ footer hr {
     .welcome h2 {
         font-size: 2.5rem;
     }
-    .bg-image {
-        background-position: center;
-    }
     /*****************  About Section ************/
     .about button {
         font-size: .7rem;
         width: 23%;
     }
     .about video {
-        width: 55%;
+        width: 75%;
         padding-left: 50px;
     }
     .about h2 {
         font-size: 1.5rem;
     }
     .paragraphs p {
-        font-size: .6rem;
+        font-size: .7rem;
     }
     /****************** Duplicate Section Value Changes ****************/
     .golf,
@@ -339,3 +337,73 @@ footer hr {
         width: 25%;
     }
 }
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+    .nav-links a {
+        font-size: .65rem;
+        margin: 0 12px;
+    }
+    .welcome h2 {
+        font-size: 1.5rem;
+    }
+    .welcome button {
+        margin-bottom: 100px;
+        font-size: .9rem;
+    }
+    .history,
+    .golf,
+    .swimming {
+        display: block;
+    }
+    .history video,
+    .golf img,
+    .football img,
+    .swimming img,
+    .tennis img {
+        width: 100%;
+        padding: 0;
+    }
+    .paragraphs,
+    .golf-text,
+    .football-text,
+    .swimming-text,
+    .tennis-text {
+        width: auto;
+    }
+    .paragraphs p {
+        text-align: center;
+    }
+    .about button {
+        width: 42%;
+    }
+    .football,
+    .tennis {
+        flex-direction: column-reverse;
+    }
+    .membership a {
+        font-size: 1.5rem;
+    }
+    .footer-sections {
+        width: 90%;
+        flex-flow: wrap;
+    }
+    footer hr {
+        width: 90%;
+    }
+    .col-1 {
+        width: 45%;
+        margin: 0;
+    }
+    .col-1 img {
+        width: 75%;
+    }
+    .col-2 {
+        width: 55%;
+    }
+    .col-3 {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 579px) {}
